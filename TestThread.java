@@ -18,11 +18,11 @@ public class TestThread {
 	 private static class ThreadDemo1 extends Thread {
 	 public void run() {
 	 synchronized (Lock1) {
-	 System.out.println("Thread 1: Holding lock 1...");
+	 System.out.println("Thread 1: Holding lock 1...scd lab 13");
 	 
 	 try { Thread.sleep(10); }
 	 catch (InterruptedException e) {}
-	 System.out.println("Thread 1: Waiting for lock 2...");
+	 System.out.println("Thread 1: Waiting for lock 2...lab 13");
 	 
 	 synchronized (Lock2) {
 	 System.out.println("Thread 1: Holding lock 1 & 2...");
@@ -41,6 +41,7 @@ public class TestThread {
 	 
 	 synchronized (Lock1) {
 	 System.out.println("Thread 2: Holding lock 1 & 2...");
+	system.out.println("creating github account");
 	 }
 	 }
 	 }
